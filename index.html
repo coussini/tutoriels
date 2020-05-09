@@ -1,12 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Blender 2.8 - Le guide d'utilisation</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style type="text/css">
+    h3 {
+      margin-top: .5rem;
+    }
+    h5 {
+      margin-top: .5rem;
+    }
+    .card-body {
+      padding-top: 0;
+    }
+    .cinquante-pourcent
+    {
+      max-height: 50%;
+    }
+    ul
+    {
+      padding-inline-start:18px;
+    }
+    li 
+    {
+      list-style-type:square;
+    }
+    .card
+    {
+      border: 1px solid black;
+    }
+    .card-text
+    {
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
-<h1> Tutoriel </h1>
-<p>Voici un contenu</p>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Blender <small class="text-muted">2.82</small></h1>
+      <p class="lead">Voici un guide sur les touches et actions que l'on peut réaliser grâce au logiciel de modélisation Blender. Tout ceci dans le but de créer des objets pour agrémenter le monde d'Orbiter 2016. Une exclusivité de Coussini</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="display-4">
+      Gestion des vues
+    </div>
+    <div class="row">
+      <!-- Une rubrique -->
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/vues/rotation.gif" class="card-img-top" alt="vue_rotation">
+          <div class="card-body">
+            <h5 class="card-title">Rotation</h5>
+            <p class="card-text">Pour effectuer une rotation de la vue, il vous suffit de maintenir le <kbd>bouton du centre</kbd> de la souris (middle Mouse) et bouger la souris</p>
+            <a href="images/vues/vue_rotation.gif" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+      <!-- Une rubrique -->
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/vues/zoom.gif" class="card-img-top" alt="vue_zoom">
+          <div class="card-body">
+            <h5 class="card-title">Zoom</h5>
+            <p class="card-text">Pour effectuer un zoom avant ou arrière de la vue, il vous suffit d'utiliser la <kbd>molette</kbd> de la souris (wheel)</p>
+            <a href="https://gyazo.com/827352f8bf6f7a82784ae958e35ad86d" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+      <!-- Une rubrique -->
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/vues/deplacement.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Déplacement</h5>
+            <p class="card-text">Pour effectuer un déplacement de la vue, il vous suffit d'utiliser la touche <kbd>SHIFT</kbd> et de maintenir le <kbd>bouton du centre</kbd> de la souris (middle Mouse) puis bouger la souris</p>
+            <a href="https://gyazo.com/ad656c18f9f89ddeb28380e0d10e10b0" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+      <!-- Une rubrique -->
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/vues/face_dos.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Vue de face / dos</h5>
+            <p class="card-text">Pour se mettre en vue de face dans la vue, il vous suffit d'appuyer sur le <kbd>1</kbd> du clavier numérique (NUMPAD 1). Pour se mettre en vue de dos (l'inverse), <kbd>CTRL</kbd> + <kbd>1</kbd> du clavier numérique</p>
+            <a href="https://gyazo.com/054488e29a551b04648bc1d7d329b328" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <!-- Une rubrique -->
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/vues/droite_gauche.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Vue de droite / gauche</h5>
+            <p class="card-text">Pour se mettre en vue de droite dans la vue, il vous suffit d'appuyer sur le <kbd>3</kbd> du clavier numérique (NUMPAD 3). Pour se mettre en vue de gauche (l'inverse), <kbd>CTRL</kbd> + <kbd>3</kbd> du clavier numérique</p>
+            <a href="https://gyazo.com/6fb85c47657a4b4dc3f27e6445be29f4" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+      <!-- Une rubrique -->
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/vues/haut_bas.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Vue de haut / bas</h5>
+            <p class="card-text">Pour se mettre en vue de haut dans la vue, il vous suffit d'appuyer sur le <kbd>7</kbd> du clavier numérique (NUMPAD 7). Pour se mettre en vue de bas (l'inverse), <kbd>CTRL</kbd> + <kbd>7</kbd> du clavier numérique</p>
+            <a href="https://gyazo.com/b2aff5d9d790d3a8db462ace70fed27b" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+      <!-- Une rubrique -->
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/vues/rotation_horaire.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Rotation horaire et inverse</h5>
+            <p class="card-text">Pour effectuer une rotation anti-horaire ou horaire de la vue, il vous suffit d'utilisez les touches <kbd>6</kbd> et <kbd>4</kbd> du clavier numérique (NUMPAD 6 et NUMPAD 4)</p>
+            <a href="https://gyazo.com/ae1e41ae2fa0ae67b931fcf03eb19704" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+      <!-- Une rubrique -->
+      <div class="col-lg-3">
+        <div class="card">
+          <img src="images/vues/rotation_haut_bas.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Rotation haut ou bas</h5>
+            <p class="card-text">Pour effectuer une rotation vers le haut ou le bas de la vue, il vous suffit d'utilisez les touches <kbd>8</kbd> et <kbd>2</kbd> du clavier numérique (NUMPAD 8 et NUMPAD 2)</p>
+            <a href="https://gyazo.com/d25c9f3942b8b177da5f732fe8d78508" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="display-4">
+      Traitements spécifiques
+    </div>
+    <div class="row">
+      <!-- Une rubrique -->
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/specifiques/curseur.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Curseur et ses déplacement</h5>
+            <ul class="card-text">
+              <li>Pour déplacer un curseur (il s'agit de la cible pointillé en rouge et en blanc), il suffit d'appuyer sur SHIFT et faire un clic droit avec la souris à l'endroit voulu</li>
+              <li>Pour centrer un curseur sur l'origine, il suffit d'appuyer sur SHIFT + C</li>
+              <li>Pour centrer le curseur sur un object sélectionné, faire un clic droit qui nous permettra de choisir dans le menu SNAP, l'option CURSOR TO SELECTED</li>
+              <li>Pour centrer l'objet sélectionné sur le curseur, faire un clic droit qui nous permettra de choisir dans le menu SNAP, l'option SELECTION TO CURSOR</li>
+            </ul>
+            <a href="https://gyazo.com/dc30726e2c14dbb3b33b8cb18c5b1333" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+      <!-- Une rubrique -->
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/specifiques/selection.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Sélection</h5>
+            <ul class="card-text">
+              <li>Pour tout sélectionner, il suffit d'appuyer sur la touche A (2 fois) à intervale de 2 secondes</li>
+              <li>Pour tout désélectionner, il suffit d'appuyer sur la touche A (2 fois) à intervale de 2 secondes</li>
+              <li>Pour se mettre en mode object, il suffit de faire un clic gauche sur un objet</li>
+              <li><mark>Pour basculer en mode édition ou en mode objet, il suffit d'appuyer sur la touche TAB. À noter que le mode est indiqué en haut à gauche de cet image animé soit par <strong>"OBJECT MODE / EDIT MODE"</strong></mark></li>
+            </ul>
+            <a href="https://gyazo.com/3f722d8b2cad7d7f4a6771dbd4d144a5" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+      <!-- Une rubrique -->
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/specifiques/mesure_objet.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Mesurer un objet</h5>
+            <ul class="card-text">
+              <li>Sélectionnez le compas à gauche pour effectuer une mesure</li>
+              <li>Pour effacer cette mesure, sélectionnez une extrémité de la mesure puis appuyez sur la touche X</li>
+            </ul>
+            <a href="https://gyazo.com/3f722d8b2cad7d7f4a6771dbd4d144a5" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <br>
+    <div class="row">
+      <!-- Une rubrique -->
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/specifiques/annotation.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Annotation sur l'écran</h5>
+            <ul class="card-text">
+              <li>Pour inscrire ou dessiner des annotations sur l'écran, sélectionnez le crayon à gauche</li>
+              <li>Pour effacer les annotations de l'écran, sélectionnez le crayon effaceur à gauche</li>
+            </ul>
+            <a href="https://gyazo.com/dc30726e2c14dbb3b33b8cb18c5b1333" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="display-4">
+      Transformations et ses modes
+    </div>
+    <div class="row">
+      <!-- Une rubrique -->
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/transformations/deplacement.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Déplacement</h5>
+            <ul class="card-text">
+              <li>Utilisez la touche G pour déplacer un objet</li>
+              <li>Utilisez la touche G suivi de la touche X ou Y ou Z afin de déplacer sur un axe spécifique</li>
+              <li><span class="text-danger">(*)</span> Utilisez la touche ALT G pour annuler tout déplacement sur un objet (en mode objet seulement)</li>            
+            </ul>
+            <a href="https://gyazo.com/dc30726e2c14dbb3b33b8cb18c5b1333" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+      <!-- Une rubrique -->
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/transformations/rotation.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Rotation</h5>
+            <ul class="card-text">
+              <li>Utilisez la touche R pour effectuer un rotation d'un objet</li>
+              <li>Utilisez la touche R suivi de la touche X ou Y ou Z afin d'effectuer une rotation sur un axe spécifique</li>
+              <li><span class="text-danger">(*)</span> Utilisez la touche ALT R pour annuler toute rotation sur un objet (en mode objet seulement)</li>
+            </ul>
+            <a href="https://gyazo.com/dc30726e2c14dbb3b33b8cb18c5b1333" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+      <!-- Une rubrique -->
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/transformations/rotation.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Changement d'échelle</h5>
+            <ul class="card-text">
+              <li>Utilisez la touche S pour effectuer un changement d'échelle d'un objet</li>
+              <li>Utilisez la touche S suivi de la touche X ou Y ou Z afin d'effectuer un changement d'échelle sur un axe spécifique</li>
+              <li><span class="text-danger">(*)</span> Utilisez la touche ALT S pour annuler tout changement d'échelle sur un objet (en mode objet seulement)</li>
+            </ul>
+            <a href="https://gyazo.com/dc30726e2c14dbb3b33b8cb18c5b1333" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <br>
+    <div class="row">
+      <!-- Une rubrique -->
+      <div class="col-lg-4">
+        <div class="card">
+          <img src="images/transformations/multiple.gif" class="card-img-top" alt="Image from Gyazo">
+          <div class="card-body">
+            <h5 class="card-title">Mode multiple</h5>
+            <ul class="card-text">
+              <li>Utilisez le carré pour effectuer un changement d'échelle d'un objet</li>
+              <li>Utilisez une ligne pour effectuer un rotation d'un objet</li>
+              <li>Utilisez la flèche pour effectuer un déplacement d'un objet</li>
+            </ul>
+            <a href="https://gyazo.com/dc30726e2c14dbb3b33b8cb18c5b1333" class="btn btn-primary">Zoomer l'image</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-</html>
